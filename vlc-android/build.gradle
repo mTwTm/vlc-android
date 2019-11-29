@@ -138,6 +138,8 @@ android {
             applicationIdSuffix ".debug"
             jniDebuggable true
             multiDexEnabled true
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard.cfg', 'proguardprint.cfg'
             buildConfigField "boolean", "BETA", "false"
         }
         dev {
